@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://layout.gtftechnologies.com/signature-global-infinity-mall/sitemap.xml
