@@ -42,7 +42,8 @@ body.modal-open{padding-right: 0px !important;overflow: hidden;}
 /* Common Css */
 body{background-color: #FFF7EF ;}
 h3{font-family: var(--sangBleu_sunrise)}
-h1,h2,h4,h5,h6,span,a{font-family: var(--vetrino);}
+h1,h2,h4,h5,h6,a{font-family: var(--vetrino);}
+span{font-family: var(--vogun);}
 body, p {font-family: var(--montserrat);}
 .pt-50{padding-top: 50px;}
 .pt-60{padding-top: 60px;}
@@ -80,7 +81,7 @@ p {letter-spacing: 1px;font-size: 14px;line-height: 26px;}
     display: flex;
     justify-content: center;
 }
-.query-btn a {padding: 10px 26px;border: 1px solid var(--primary-color);display: inline-block;border-radius: 5px;background: var(--primary-color);color: #fff;letter-spacing: 2px;font-weight: 500;font-size: 14px;margin-top: 10px;}
+.query-btn a {padding: 10px 26px;border: 1px solid var(--primary-color);display: inline-block;border-radius: 5px;background: var(--primary-color);color: #fff;letter-spacing: 2px;font-weight: 500;font-size: 14px;margin-top: 30px;}
 /* .background-view{background-color: var(--background-secondary-color);} */
 
 
@@ -325,7 +326,7 @@ img.brand-logo {width: 140px;border-left: 1px solid #000000;padding-left: 10px;}
 .overview-content {margin-top: 60px;height: 100%;display: flex;flex-direction: column;justify-content: space-between;z-index: 99;position: relative;align-items: self-start;}
 .overview-images {position: relative;display: flex;justify-content: end;flex-wrap: wrap;z-index: 99;}
 .overview-images .img-2{position: absolute;left: 5%;top: 55%;border: 5px solid #f0e9e2;border-radius: 0;}
-.background-view{background: url("../images/background-img.png") no-repeat;}
+.background-view{background: url("../images/background-img.png") no-repeat;background-size: cover;}
 
 /* Amenity Section */
 .amenity-section{position: relative;}
@@ -584,14 +585,14 @@ ul.location-list {margin-top: 10px;}
 
 .discalimer { text-align: center;}
 .discalimer p {font-size: 12px;line-height: 24px;}
-.privacy-policy {padding-top: 20px;text-align: center;}
+.privacy-policy {padding-top: 4px;text-align: center;}
 
 
 /* Modal Section */
 .popup-section .modal-content {background: #f8f4f0}
 .popup-section .form_section button.btn-close{position:absolute;right: 20px;top: 15px;}
 .popup-section .modal-dialog .popup_image img{width:100%;max-width:100%;height: 100%;object-fit: cover;}
-.popup-section .modal-dialog.modal-dialog-centered{max-width: 500px;}
+.popup-section .modal-dialog.modal-dialog-centered{max-width: 450px;}
 .popup-section .modal-dialog .bg_logo{width:230px;height:230px;top: 32%;}
 .popup-section .modal-dialog .menu_logo{text-align:center}
 .popup-section .popup_image {display: flex; flex-direction: column;justify-content: center; align-items: center;height: 100%;position: relative;}
@@ -601,10 +602,10 @@ ul.location-list {margin-top: 10px;}
 .popup-pricing span {font-size: 12px;letter-spacing: 2px;font-family: 'Montserrat';font-weight: 300;}
 .popup-pricing p {font-size: 30px;letter-spacing: 5px;font-family: var(--dropkicker);font-weight: 300;}
 .popup-pricing {display: flex;flex-direction: column;align-items: center;}
-.popup-section .popup-form{padding: 20px 30px;}
-.popup-section .form_section .form-control {border: none;border-bottom: 1px solid #00000057;padding: 15px 5px;margin-bottom: 10px;border-radius: 0;background-color: transparent;font-family: var(--primary-font);font-size: 14px;font-weight: 400;line-height: 15.58px;letter-spacing: 1px;}
-.popup-section .form_section .form-control::placeholder{font-family: var(--montserrat);font-size: 13px;letter-spacing: 1px;font-weight: 500;}
-.popup-section .submit_btn {border: 1px solid;width: fit-content;padding: 11px 32px;color: #fff;background: var(--primary-color);letter-spacing: 2px;text-transform: uppercase;font-family: var(--montserrat);font-size: 12px;display: block;margin: 20px auto 0;}
+.popup-section .popup-form{padding: 10px 20px;}
+.popup-section .form_section .form-control {border: 1px solid #5b5b5b;padding: 6px 10px;margin-bottom: 8px;border-radius: 4px;background-color: transparent;font-family: var(--primary-font);font-weight: 300;letter-spacing: 1px;}
+.popup-section .form_section .form-control::placeholder{font-family: var(--montserrat);font-size: 11px;letter-spacing: 0.5px;font-weight: 400;color: #656565;}
+.popup-section .submit_btn {border: 1px solid;width: fit-content;padding: 11px 32px;color: #fff;background: var(--primary-color);letter-spacing: 2px;text-transform: uppercase;font-family: var(--vogun);font-size: 12px;display: block;margin: 20px auto 0;}
 .popup-section button.btn-close {position: absolute;right: 10px;top: 10px;z-index: 99;border: 1px solid;border-radius: 50%;padding: 10px;font-size: 10px;}
 .popup-project-logo img {margin: auto;display: block;width: 140px;padding-bottom: 30px;/* filter: invert(1); */}
 .popup-section .checkbox-section input{background-color: var(--primary-color);border-color: var(--primary-color);box-shadow: none;accent-color: var(--primary-color);}
@@ -615,13 +616,40 @@ ul.location-list {margin-top: 10px;}
 .popup-section.map-section .modal-dialog.modal-dialog-centered {max-width: 800px !important;}
 .popup-section.map-section .modal-body {padding: 40px;}
 
+.popup-project-logo h4 {
+    font-family:  var(--vogun);
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.popup-project-logo p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+.form.lower-form-part label {
+    font-size: 12px;
+    color: #000;
+}
+.form.lower-form-part {
+    padding-top: 20px;
+}
+.iti {
+    display: block !important;
+    margin-top: 20px !important;
+}
+
 .mobile-section{display: none;}
 /* .banner-mobile{min-height: 60vh;height: 60vh;} */
 .banner-mobile {
     min-height: 400px;
     height: 400px;
 }
-.checkbox-section{color: #555555e0;font-size: 8px; gap: 5px; margin-top: 13px;letter-spacing: 0.5px;}
+.checkbox-section{color: #060606e0;font-size: 9px;gap: 6px;margin-top: 12px;letter-spacing: 0.5px;}
 .mobile-section a:active{color: #fff;}
 .mobile-section a:hover{color: #fff;}
 
@@ -646,6 +674,61 @@ ul.location-list {margin-top: 10px;}
         .desk-view {
             display: block;
         }
+
+        img.img-fluid.builder-footer-logo {
+            width: 160px;
+        }
+        .about-developer .section-heading {
+    margin-bottom: 40px;
+}
+p.btm-foot {
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.moreless-button {
+    border: 1px solid;
+    /* display: inline-block; */
+    padding: 0px 12px;
+    font-size: 10px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: #fff;
+    margin-top: 10px;
+    width: fit-content;
+    margin: 8px auto 0;
+}
+
+.popup-form.form_section.footer-new-pop {
+    padding: 30px 40px;
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+}
+
+.popup-form.form_section.footer-new-pop .form-control {
+    border: 1px solid var(--primary-color);
+    background: #ffffff00;
+    margin-bottom: 8px;
+}
+.popup-form.form_section.footer-new-pop .form-control::placeholder{font-family: var(--montserrat);font-size: 11px;letter-spacing: 0.5px;font-weight: 400;color: #656565;}
+.popup-form.form_section.footer-new-pop .submit_btn {
+    border: 1px solid;
+    width: fit-content;
+    padding: 11px 32px;
+    color: #fff;
+    background: var(--primary-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: var(--vogun);
+    font-size: 12px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+
 @media(max-width:1600px){
     .laptop-view{display: none}
     .container{max-width: 1240px;}
@@ -823,6 +906,9 @@ ul.location-list {margin-top: 10px;}
     p {font-size: 11px;line-height: 24px;}
     .section-heading::before {height: 20%;width: 100%;}
     .section-heading {margin-bottom: 40px;padding: 0 20px;}
+    .about-developer .section-heading {
+    margin-bottom: 20px;
+}
     .section-heading h2 {font-size: 22px;line-height: 38px;}
     .section-subheading h4 {width: 100%;font-size: 22px;line-height: 36px;}
     .container {max-width: 90%;}
@@ -936,7 +1022,7 @@ ul.location-list {margin-top: 10px;}
 
 
     .section-subheading.dark-color h4 {font-size: 24px;font-weight: 300;}
-    .developer-content {padding: 20px 0; text-align: center;}
+    .developer-content {padding: 20px 0 0;  text-align: center;}
     .footer-img {margin: 0px 0px;}
     .footer-img img {border-radius: 10px;}
 
@@ -1067,6 +1153,11 @@ ul.location-list {margin-top: 10px;}
 img.location-icon {
     width: 24px;
     padding-top: 5px;
+}
+p.btm-foot {
+    text-align: center;
+    font-size: 10px;
+    line-height: 17px;
 }
 
 
